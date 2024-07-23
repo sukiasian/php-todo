@@ -1,0 +1,47 @@
+button {
+	padding: 1rem 1.5rem;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+	@include respond(desktop) { 
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.button {
+	font-size: medium;
+	font-weight: 700;
+	padding: 1.2rem 0.5rem;
+	box-shadow: 0 0 1px 3px rgba(209, 209, 209, 0.2);
+
+	&:hover:not(:active) { 
+		transition: 0.1s;
+	}
+}
+
+#delete-task { 
+	background-image: url('../assets/icons/remove.png');
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+
+	&:hover { 
+		background-image: url('../assets/icons/remove-hover.png');
+	}
+}
+
+#mark-as-done { 
+	background-image: url('../assets/icons/done.png');
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+
+
+	&:hover { 
+		background-image: url('../assets/icons/done-hover.png');
+	}
+}

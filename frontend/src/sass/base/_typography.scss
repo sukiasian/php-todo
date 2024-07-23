@@ -1,0 +1,128 @@
+body {
+	// font-family: SukhumvitSet-Medium;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.heading--primary {
+	color: #2b2b2b;
+	font-size: 4.5rem;
+	line-height: 1.2;
+	text-transform: uppercase;
+
+	@include respond(tab-port) {
+		font-size: 2rem;
+	}
+
+	@include respond(phone) {
+		font-size: 1.1rem;
+	}
+
+	@include respond(tab-land) {
+		font-size: 2.8rem;
+	}
+
+}
+
+.heading--secondary {
+	font-size: 4rem;
+	font-weight: 600;
+	display: inline-block;
+
+	@include respond(tab-port) {
+		font-size: 0.5rem;
+	}
+
+	@include respond(phone) {
+		font-size: 1.5rem;
+	}
+}
+
+.paragraph {
+	&--large {
+		font-size: 2rem;
+	}
+
+	&--light { 
+		color: $color-grey-light;
+	}
+
+	&--bold { 
+		font-weight: 900;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.section-heading {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	@include respond(phone) {
+		gap: 0;
+	}
+
+	.red-bullet {
+		width: 50px;
+		height: 50px;
+		background: linear-gradient(45deg, #A039EF, #9EEEEE);
+  		color: #fff; 
+  		text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+		border-radius: 10px;
+		margin: 2rem;
+
+		@include respond(tab-port) {
+			width: 40px;
+			height: 40px;
+			margin: 1.5rem;
+		}
+
+		@include respond(phone) {
+			width: 30px;
+			height: 30px;
+			margin: 1.5rem;
+		}
+
+		@include respond(tab-land) {
+			margin-bottom: 2rem;
+		}
+
+	}
+
+	& h1 {
+		color: white;
+
+		@include respond(phone) { 
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.paragraph.active {
+	border-bottom: 2px solid $color-primary-1;
+}
+
+h1,
+h2,
+p,
+img,
+button,
+li {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.background h1,
+h2 {
+	color: white;
+}

@@ -1,0 +1,117 @@
+.u-center-text {
+    text-align: center;
+}
+
+.margin-bottom {
+    &-small {
+        margin-bottom: 2rem;
+    }
+
+    &-medium {
+        margin-bottom: 4rem;
+    }
+}
+
+.margin-top {
+    &-small {
+        margin-top: 2rem;
+    }
+    &-medium {
+        margin-top: 4rem;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.drop-down-menu {
+    position: absolute;
+    margin-top: 0.25rem;
+    margin-left: -1rem;
+    border: 1px solid $box-border-color;
+    border-radius: $box-border-radius;
+    box-shadow: $box-shadow;
+}
+
+.dark-screen {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(175, 173, 173, 0.1);
+    z-index: 10000;
+}
+
+.invisible {
+    &--phone {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &--tab-port {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+
+    &--tab-land {
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        @include respond(desktop) {
+            display: none;
+        }
+    }
+
+    &--big-desktop {
+        @include respond(big-desktop) {
+            display: none;
+        }
+    }
+}
+
+// NOTE
+.fixed {
+    position: fixed;
+    z-index: 2000;
+    background-color: white;
+}
+
+.background {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 3rem;
+	
+	@include respond(phone) { 
+		padding: 1rem;
+	}
+
+	&--black { 
+		background-color: $color-background-dark-1; 
+		padding-bottom: 0;
+
+		& h1 { 
+			color: white;
+		}
+	}
+
+	&--blue { 
+		background-color: $color-background-dark-2;
+	}
+}
+
+.page-heading { 
+	align-self: flex-start;
+}

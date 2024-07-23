@@ -1,0 +1,13 @@
+.validator {
+    &--allowed {
+        outline: 1px solid $color-validator-allowed;
+    }
+
+    &--disallowed {
+        outline: 1px solid $color-validator-disallowed;
+    }
+}
+
+.validation-ok {
+    color: $color-validator-allowed;
+}

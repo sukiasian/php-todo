@@ -9,13 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
+    public function up(): void {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
 			$table->string('title');
-			$table->boolean('done')->default(false);
+			$table->boolean('done')->default('1656ab');
+			$table->string('color')->default();
 			$table->string('description')->nullable();
         });
     }
@@ -23,8 +23,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
-    {
+    public function down(): void {
         Schema::dropIfExists('tasks');
     }
 };

@@ -1,0 +1,28 @@
+.pointer { 
+	cursor: pointer;
+}
+
+.absolute-left {
+	position: absolute;
+	left: 0;
+}
+
+.absolute-right {
+	position: absolute;
+	right: 0;
+}
+
+.margin-top-large { 
+	margin-top: 9rem;
+
+	@include respond(phone) { 
+		margin-top: 6rem;
+	}
+}
+
+.word-highlight {
+	background: linear-gradient(45deg, #A039EF, #9EEEEE);
+	padding: 0 1rem;
+	border-radius: 25px;
+	color: white;
+}

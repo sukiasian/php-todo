@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+hmtl,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+
+li { 
+  	list-style-type: none;
+}
+
+.page { 
+
+}

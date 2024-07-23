@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"target": "ES6",
+		"module": "CommonJS",
+		"strict": true,
+		"jsx": "preserve",
+		"moduleResolution": "Node",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"strictPropertyInitialization": false,
+		"useDefineForClassFields": true,
+		"sourceMap": true,
+		"strictNullChecks": false,
+		"baseUrl": ".",
+		"outDir": "ts-built",
+		"types": ["webpack-env", "node"],
+		"paths": {
+			"@/*": ["/*"]
+		},
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"exclude": ["node_modules", "ts-built"]
+}

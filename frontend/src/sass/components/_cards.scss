@@ -1,0 +1,31 @@
+.card {
+	background-color: white;
+	padding: 1rem;
+	border-radius: 27px;
+	min-width: 200px;
+	position: relative;
+
+	&:not(:last-child) { 
+		margin-bottom: 2rem;
+	}
+
+	& .control-panel { 
+		height: 120px;
+		justify-content: space-around;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 5%;
+		left: 93%;
+	}
+
+	& h2 { 
+		color: black;
+	}
+}
+
+.done { 
+	border: 8px solid green;
+}
+
+

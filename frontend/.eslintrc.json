@@ -1,0 +1,29 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 2022,
+		"sourceType": "module"
+	},
+
+	"rules": {
+		"no-unused-vars": "error",
+		"no-undef": "error",
+		"no-console": "warn",
+		"no-trailing-spaces": "error",
+		"semi": ["error", "always"]
+	},
+
+	"env": {
+		"browser": true,
+		"node": true
+	},
+
+	"globals": {
+		"console": true
+	},
+
+	"plugins": ["eslint-plugin-react"],
+
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
+
+	"ignorePatterns": ["node_modules/*", "dist/*"]
+}
